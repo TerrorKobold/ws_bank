@@ -77,7 +77,7 @@ end
 
 Citizen.CreateThread(function()
     while true do
-        Citizen.Wait(0)
+        Wait(0)
         if IsNearATM() or IsNearBankLocation() then
             lib.showTextUI('[E] - Bank', {
                 icon = 'building-columns'
